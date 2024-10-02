@@ -42,7 +42,7 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIO</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg text-justify">
-              I’m Stefano Esposito, a full stack developer with a strong background in both frontend and backend technologies. My passion for music, as a guitarist and songwriter, drives me to blend my technical skills with my creative pursuits. I’m also deeply interested in spiritual exploration, practicing Taijiquan and reflecting on concepts like the universal Self. As the founder of <strong>MyGigz</strong>, a platform designed to simplify live event management for musicians, I continue to delve into various fields such as business, marketing, and entrepreneurship. I see myself as a lifelong learner, always seeking to grow and expand my knowledge across different domains.
+              I’m Stefano Esposito, a full stack developer with a strong background in both frontend and backend technologies. My passion for music, as a guitarist and songwriter, drives me to blend my technical skills with my creative pursuits. I’m also deeply interested in spiritual exploration, practicing Taijiquan and reflecting on concepts like the universal Self. As the founder of <strong>MyGigz.live</strong>, a platform designed to simplify live event management for musicians, I continue to delve into various fields such as business, marketing, and entrepreneurship. I see myself as a lifelong learner, always seeking to grow and expand my knowledge across different domains.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
@@ -209,7 +209,7 @@ const AboutPage = () => {
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
-              EXPERIENCE
+              IT EXPERIENCE
             </motion.h1>
             {/* EXPERIENCE LIST */}
             <motion.div
@@ -220,97 +220,133 @@ const AboutPage = () => {
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
-                <div className="w-1/3 ">
+                <div className="w-1/3">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Frontend Developer
+                  <div className="bg-white p-3 font-semibold rounded-tl-lg">
+                    Full Stack Developer
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="px-3 py-1 italic rounded-b-lg bg-black text-white text-sm font-semibold w-full">
+                    <small>MyGigz.live</small>
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="p-1 text-sm italic">
+                    Working as a solopreneur on MyGigz, a multi-user platform I designed to share live event dates.{" "}
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 mt-[-12px] text-red-400 text-sm font-semibold">
+                    2023 - Present
+                  </div>
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
+              </div>
+
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 ">
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-tr-lg">
+                    Frontend Developer
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="px-3 py-1 italic rounded-b-lg bg-black text-white text-sm font-semibold w-full">
+                    <small>Abstract</small>
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-2 text-sm italic">
                     I led web development, offering expertise in JavaScript
-                    frameworks.{" "}
+                    frameworks like React and NextJs.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2022 - Present
                   </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Abstract
-                  </div>
                 </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
               </div>
+
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
-                <div className="w-1/3 "></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior React Developer
+                  <div className="bg-white p-3 font-semibold rounded-tl-lg">
+                    Relations and Web Presence Officer
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="px-3 py-1 italic rounded-b-lg bg-black text-white text-sm font-semibold w-full">
+                    <small>Maestri di Strada (NGO)</small>
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.{" "}
+                    Developing and maintaining MVC websites and platforms, managing promotion, public relations, and the press office{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{" "}
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
+                    2012 - 2013{" "}
                   </div>
                 </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 ">
+                </div>
               </div>
+
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
                 <div className="w-1/3 ">
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-e-lg">
                     Freelancer{" "}
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
+                  <div className="p-2 text-sm italic">
+                    I developed web solutions, utilizing various technologies to meet the needs of clients.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{" "}
+                    2003 - present{" "}
                   </div>
                 </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
               </div>
             </motion.div>
           </div>

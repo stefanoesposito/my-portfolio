@@ -10,27 +10,60 @@ const ContactPage = () => {
 
   const form = useRef();
 
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   setError(false);
+  //   setSuccess(false);
+  //
+  //   emailjs
+  //     .sendForm(
+  //       process.env.NEXT_PUBLIC_SERVICE_ID,
+  //       process.env.NEXT_PUBLIC_TEMPLATE_ID,
+  //       form.current,
+  //       process.env.NEXT_PUBLIC_PUBLIC_KEY
+  //     )
+  //     .then(
+  //       () => {
+  //         setSuccess(true);
+  //         form.current.reset();
+  //       },
+  //       () => {
+  //         setError(true);
+  //       }
+  //     );
+  // };
+
   const sendEmail = (e) => {
     e.preventDefault();
     setError(false);
     setSuccess(false);
 
+    const templateParams = {
+      from_name: form.current.from_name.value,
+      to_name: 'Stefano',
+      user_email: form.current.user_email.value,
+      user_message: form.current.user_message.value,
+    };
+
+    console.log(templateParams)
     emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
-        form.current,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setSuccess(true);
-          form.current.reset();
-        },
-        () => {
-          setError(true);
-        }
-      );
+        .send(
+            process.env.NEXT_PUBLIC_SERVICE_ID,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID,
+            templateParams,
+            process.env.NEXT_PUBLIC_PUBLIC_KEY
+        )
+        .then(
+            (result) => {
+              console.log('Email inviata con successo:', result.text);
+              setSuccess(true);
+              form.current.reset();
+            },
+            (error) => {
+              console.error('Errore nell\'invio dell\'email:', error);
+              setError(true);
+            }
+        );
   };
 
   return (
@@ -58,40 +91,50 @@ const ContactPage = () => {
                 {letter}
               </motion.span>
             ))}
-            ☮️
+            {'\u00A0'}☮️
           </div>
         </div>
         {/* FORM CONTAINER */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-full lg:h-full lg:w-1/2 bg-red-50 rounded-xl flex flex-col gap-4 justify-center p-4 mb-4"
         >
           <span>Hi Stefano,</span>
+          <span>My name is:</span>
+          <input
+              name="from_name"
+              type="text"
+              className="bg-white rounded-t-lg p-2 border-b-2 border-b-blue-300 outline-none"
+          />
+          <span>My message:</span>
           <textarea
             rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+            className="bg-white rounded-t-lg p-2 border-b-2 border-b-blue-300 outline-none resize-none"
             name="user_message"
+            required
           />
           <span>My mail address is:</span>
           <input
             name="user_email"
             type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
+            className="bg-white rounded-t-lg p-2 border-b-2 border-b-blue-300 outline-none"
           />
-          <span>Regards</span>
-          <button className="bg-blue-300 rounded font-semibold text-white p-4">
-            Send
-          </button>
+          <input
+              className="bg-blue-400 rounded font-semibold text-white p-4"
+              id={'button'}
+              type={'submit'}
+              value={'Send Email'}
+           />
           {success && (
-            <span className="text-green-600 font-semibold">
+            <small className="text-green-600 font-semibold">
               Your message has been sent successfully!
-            </span>
+            </small>
           )}
           {error && (
-            <span className="text-red-600 font-semibold">
+            <small className="text-red-600 font-semibold">
               Something went wrong!
-            </span>
+            </small>
           )}
         </form>
       </div>
