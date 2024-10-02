@@ -91,88 +91,88 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 JavaScript
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 TypeScript
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 React.js
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Next.js
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 SCSS
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Tailwind CSS
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Material UI
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 MongoDB
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 PostgreSQL
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Node.js
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Nest.js
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Express.js
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Spring Boot
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 GraphQL
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Python
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Redux
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 RTK
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Framer Motion
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Three.js
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Webpack
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Vite
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Docker
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Django
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Flask
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Firebase
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Git
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Figma
               </div>
-              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded w-auto p-2 text-sm bg-black text-white hover:bg-white hover:text-black whitespace-nowrap">
                 Bitbucket
               </div>
             </motion.div>
