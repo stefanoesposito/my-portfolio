@@ -5,8 +5,8 @@ import TransitionProvider from "@/components/transitionProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Stefano Esposito Portfolio App",
-  description: "The best animated portfolio page",
+    title: "Stefano Esposito - Portfolio Web App",
+    description: "Explore the dynamic and interactive portfolio of Stefano Esposito, showcasing innovative frontend and full-stack projects in a beautifully animated experience.",
 };
 
 export default function RootLayout({ children }) {
